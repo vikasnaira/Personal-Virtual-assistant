@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Protest+Strike&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Places the video behind other content */
+    transform: translate(-50%, -50%);
+}
+body{
+    /* background:black; */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding: 50px;
+    gap: 30px;
+}
+.image{
+    width:40%;
+    height:80vh;
+    transform: rotate(360deg);
+    border-radius:500px;
+    overflow: hidden;
+    border: 10px solid rgb(100, 5, 116);
+    box-shadow: 5px 5px 60px rgb(100, 5, 116), inset 5px 5px 30px rgb(100, 5, 116);
+}
+video{
+    width: 100%;
+    object-fit:cover;
+    height: 100%;
+    pointer-events: none;
+}
+h1{
+    font-family: "Protest Strike", serif;
+    color: rgb(255, 255, 255);
+    font-weight:200;
+    text-shadow: 5px 5px 10px black;
+    width: 270px;
+    background-color: black;
+    font-size:3rem;
+    height:fit-content;
+}
+#vk{
+    color:red;
+    font-size:2.5vw;
+}
+.gif img{
+    width: 50%;
+    transition: .5s;
+    height: 50%;
+    transform: scale(0);
+    background-color: black;
+    pointer-events: none;
+    mix-blend-mode:difference;
+    border-radius: 50%;
+}
+.gif{
+    width:30%;
+    height:60vh;
+    margin-top:250px;
+    align-items: center;
+    gap:20px;
+    background-color: black;
+}
+button{
+    display: flex;
+    width:fit-content;
+    padding: 10px;
+    position: absolute;
+    right:100px;
+    top:50%;
+    min-height:50px;
+    border-radius:20px;
+    transform: scale(1);
+    align-items: center;
+    justify-content: space-around;
+    background:linear-gradient(to right,rgb(15, 15, 22),rgb(119, 116, 116), rgb(15, 15, 22));
+    border: none;
+    transition:.5s;
+    color:white;
+}
+button:hover{
+    border: 1px solid yellow;
+    box-shadow: 2px 2px 10px yellow;
+}
